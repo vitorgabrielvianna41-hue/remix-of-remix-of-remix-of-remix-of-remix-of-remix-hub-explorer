@@ -2,15 +2,15 @@ import { useEffect, useState, type CSSProperties, type ReactNode } from "react";
 
 import { CONFIG } from "@/config/landing";
 
-import heroMockup from "@/assets/hero-mockup-novo-v2.png";
-import appNovo from "@/assets/app-inicio.png";
-import appCustos from "@/assets/app-lote.png";
-import appResultado from "@/assets/app-perfil.png";
-import criadorImg from "@/assets/criador-rural.jpg";
-import bonus1Img from "@/assets/bonus-rural-1.jpg";
-import bonus2Img from "@/assets/bonus-rural-2.jpg";
-import bonus3Img from "@/assets/bonus-rural-3.jpg";
-import bonus4Img from "@/assets/bonus-rural-4.jpg";
+import heroMockup from "@/assets/funilaria-hero.jpg";
+import appNovo from "@/assets/funilaria-step1.jpg";
+import appCustos from "@/assets/funilaria-step2.jpg";
+import appResultado from "@/assets/funilaria-step3.jpg";
+import criadorImg from "@/assets/funilaria-criador.jpg";
+import bonus1Img from "@/assets/funilaria-bonus-1.jpg";
+import bonus2Img from "@/assets/funilaria-bonus-2.jpg";
+import bonus3Img from "@/assets/funilaria-bonus-3.jpg";
+import bonus4Img from "@/assets/funilaria-bonus-4.jpg";
 import garantiaAsset from "@/assets/garantia-30-dias.png";
 import depo1 from "@/assets/depo-1.jpg";
 import depo2 from "@/assets/depo-2.jpg";
@@ -19,32 +19,31 @@ import depo4 from "@/assets/depo-4.jpg";
 import depo5 from "@/assets/depo-5.jpg";
 import depo6 from "@/assets/depo-6.jpg";
 
-const garantiaImg = garantiaAsset;
 const depoPhotos = [depo1, depo2, depo3, depo4, depo5, depo6];
 
 export default function LandingPage() {
   return <Landing />;
 }
 
-/* -------- EARTHY PALETTE -------- */
+/* -------- BLACK / YELLOW PALETTE -------- */
 const C = {
-  navy: "#1a2e1f",       // dark forest
-  navyDeep: "#0f1f12",   // deeper forest
-  green: "#2D5016",      // primary green
-  greenSoft: "#3d6b22",
-  brown: "#5C3A21",
-  brownSoft: "#8B5E3C",
-  beige: "#E8D9B5",
-  cream: "#FAF4E6",
+  navy: "#141414",       // dark surface
+  navyDeep: "#0a0a0a",   // deepest black
+  green: "#E0A800",      // "brand" accent (now amber)
+  greenSoft: "#FFC107",
+  brown: "#2a2a2a",
+  brownSoft: "#3a3a3a",
+  beige: "#1a1a1a",
+  cream: "#f7f5f0",
   yellow: "#FFC107",     // CTA
   yellowDeep: "#E0A800",
-  orange: "#E67E22",     // urgency
+  orange: "#E63B00",     // urgency
   white: "#FFFFFF",
-  cardBorder: "#D9C9A3",
-  ink: "#1f2a1a",
-  inkSoft: "#4a5a44",
-  inkMuted: "#7a8470",
-  check: "#2D5016",
+  cardBorder: "#e2ddd2",
+  ink: "#151515",
+  inkSoft: "#4a4a4a",
+  inkMuted: "#8a8a8a",
+  check: "#E0A800",
 };
 
 const heading: CSSProperties = {
@@ -121,15 +120,15 @@ function SalesPopup() {
         left: 16,
         bottom: 16,
         zIndex: 9999,
-        background: "#0a2e1f",
+        background: "#1a1a1a",
         color: "#fff",
-        border: "1px solid #1a5c3a",
+        border: "1px solid #3a3a3a",
         borderRadius: 14,
         padding: "10px 36px 10px 12px",
         display: "flex",
         alignItems: "center",
         gap: 12,
-        boxShadow: "0 20px 50px -15px rgba(0,0,0,0.5)",
+        boxShadow: "0 20px 50px -15px rgba(0,0,0,0.7)",
         maxWidth: 320,
         fontFamily: "'Montserrat', sans-serif",
         transform: visible ? "translateX(0)" : "translateX(-130%)",
@@ -143,7 +142,7 @@ function SalesPopup() {
           width: 38,
           height: 38,
           borderRadius: 10,
-          background: "linear-gradient(135deg,#22c55e,#16a34a)",
+          background: "linear-gradient(135deg,#FFC107,#E0A800)",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -151,13 +150,13 @@ function SalesPopup() {
           fontSize: 20,
         }}
       >
-        🌱
+        🔧
       </div>
       <div style={{ flex: 1, minWidth: 0, textAlign: "left" }}>
-        <div style={{ fontSize: 13, fontWeight: 700, lineHeight: 1.25, color: "#fde047" }}>
+        <div style={{ fontSize: 13, fontWeight: 700, lineHeight: 1.25, color: "#FFC107" }}>
           {CONFIG.salesPopup.template(s.name, CONFIG.salesPopup.defaultPlan)}
         </div>
-        <div style={{ fontSize: 11, color: "#86efac", marginTop: 2 }}>
+        <div style={{ fontSize: 11, color: "#cfcfcf", marginTop: 2 }}>
           {s.city} · {s.time}
         </div>
       </div>
@@ -170,7 +169,7 @@ function SalesPopup() {
           right: 8,
           background: "transparent",
           border: 0,
-          color: "#94a3b8",
+          color: "#8a8a8a",
           fontSize: 16,
           cursor: "pointer",
           lineHeight: 1,
@@ -206,7 +205,7 @@ function Hero() {
   return (
     <section
       style={{
-        background: `radial-gradient(120% 80% at 50% 0%, #25422a 0%, ${C.navy} 55%, ${C.navyDeep} 100%)`,
+        background: `radial-gradient(120% 80% at 50% 0%, #262626 0%, ${C.navy} 55%, ${C.navyDeep} 100%)`,
         padding: "40px 16px 56px",
       }}
     >
@@ -235,8 +234,9 @@ function Hero() {
             color: C.white,
           }}
         >
-          VOCÊ ESTÁ <span style={{ color: C.yellow }}>LUCRANDO</span> OU
-          {" "}<span style={{ color: C.yellow }}>PERDENDO DINHEIRO</span> NA SUA PRODUÇÃO?
+          ORÇAMENTO DE FUNILEIRO
+          <br />
+          <span style={{ color: C.yellow }}>EM PDF EM 3 MINUTOS</span>
         </h1>
         <p style={{ ...heading, marginTop: 22, fontSize: 14, color: C.yellow, letterSpacing: 1 }}>
           {CONFIG.hero.socialProofCount} {CONFIG.hero.socialProofLabel}
@@ -257,11 +257,14 @@ function Hero() {
           <img
             src={heroMockup}
             alt={`${CONFIG.brand.name} no celular`}
+            width={816}
+            height={816}
             style={{
               width: "min(520px, 100%)",
               height: "auto",
               display: "block",
-              filter: "drop-shadow(0 30px 60px rgba(0,0,0,0.55))",
+              borderRadius: 20,
+              filter: "drop-shadow(0 30px 60px rgba(0,0,0,0.7))",
             }}
           />
         </div>
@@ -328,7 +331,7 @@ function HowYouGet() {
   const steps = [
     { icon: "📧", t: "Comprou? Você recebe o app no seu e-mail em menos de 2 minutos" },
     { icon: "📱", t: "Clica e abre o app direto no celular — sem baixar nada na loja" },
-    { icon: "✅", t: "É só usar — funciona no campo, mesmo sem sinal de internet" },
+    { icon: "✅", t: "É só usar — funciona na oficina, mesmo sem sinal de internet" },
   ];
   const badges = ["ACESSO IMEDIATO", "FUNCIONA OFFLINE", "ATUALIZAÇÕES GRATUITAS", "SUPORTE VIP"];
   return (
@@ -336,61 +339,53 @@ function HowYouGet() {
       <div style={{ maxWidth: 720, margin: "0 auto" }}>
         <div
           style={{
-            background: "#1d2e22",
+            background: "#161616",
             borderRadius: 16,
             padding: 16,
             border: "1px solid rgba(255,193,7,0.18)",
-            boxShadow: "0 20px 40px rgba(0,0,0,0.35)",
+            boxShadow: "0 20px 40px rgba(0,0,0,0.5)",
           }}
         >
           <h3
             style={{
               ...heading,
               color: C.yellow,
-              fontSize: "clamp(18px, 4.5vw, 24px)",
+              fontSize: 15,
               letterSpacing: 1,
-              margin: "0 0 10px",
               textAlign: "center",
+              margin: "6px 0 20px",
             }}
           >
             COMO VOCÊ RECEBE O APP?
           </h3>
-          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 8 }}>
+          <div style={{ display: "grid", gap: 14 }}>
             {steps.map((s, i) => (
-              <li
+              <div
                 key={i}
                 style={{
                   display: "flex",
                   alignItems: "center",
-                  gap: 8,
-                  color: C.white,
-                  fontSize: 13,
-                  lineHeight: 1.35,
+                  gap: 14,
+                  background: "rgba(255,255,255,0.03)",
+                  borderRadius: 12,
+                  padding: "14px 16px",
                 }}
               >
-                <span style={{ fontSize: 14, flexShrink: 0, lineHeight: 1 }}>{s.icon}</span>
-                <span>{s.t}</span>
-              </li>
+                <div style={{ fontSize: 26, flexShrink: 0 }}>{s.icon}</div>
+                <div style={{ color: "rgba(255,255,255,0.9)", fontSize: 14, lineHeight: 1.5, fontWeight: 600 }}>
+                  {s.t}
+                </div>
+              </div>
             ))}
-          </ul>
-          <p
-            style={{
-              margin: "6px 0 0",
-              color: "#9bb09f",
-              fontSize: 11,
-              textAlign: "center",
-            }}
-          >
-            Funciona em qualquer celular Android ou iPhone, com ou sem internet no campo.
-          </p>
+          </div>
         </div>
         <div
           style={{
-            marginTop: 28,
+            marginTop: 20,
             display: "flex",
-            gap: 18,
             flexWrap: "wrap",
             justifyContent: "center",
+            gap: 18,
           }}
         >
           {badges.map((b, i) => (
@@ -398,7 +393,7 @@ function HowYouGet() {
               key={i}
               style={{
                 ...heading,
-                color: "#7bc47f",
+                color: C.yellow,
                 fontSize: 12,
                 letterSpacing: 1.5,
                 display: "flex",
@@ -440,24 +435,24 @@ function YellowTag({ children }: { children: ReactNode }) {
 function Pains() {
   const items = [
     {
-      icon: "🤷",
-      t: "Vende a produção sem saber se está tendo lucro — e só descobre que perdeu dinheiro quando fecha as contas no fim do mês",
+      icon: "🧮",
+      t: "Gasta uma hora calculando tinta, massa e material que o app faria em 2 minutos — e ainda erra a conta",
     },
     {
-      icon: "📝",
-      t: "Faz a conta de cabeça ou no caderno, esquece o frete, a energia, a ração — e termina o lote no prejuízo sem perceber",
+      icon: "🛒",
+      t: "Orça no chute, começa o serviço e descobre que faltou material — compra na loja de tinta pagando 2x o preço",
     },
     {
-      icon: "💸",
-      t: "Negocia com o comprador no chute, baixa o preço pra fechar e descobre depois que vendeu por menos do que gastou pra produzir",
+      icon: "💬",
+      t: 'Responde "te mando o valor depois" e o cliente já fechou com outro funileiro que respondeu PDF em 5 minutos',
+    },
+    {
+      icon: "🏃",
+      t: "Perde serviço para funileiro menos experiente só porque ele responde mais rápido e com proposta profissional",
     },
     {
       icon: "📉",
-      t: "Trabalha o ano inteiro, o lote vende, mas o dinheiro some — e você não sabe explicar pra onde foi",
-    },
-    {
-      icon: "🧮",
-      t: "Tenta usar planilha no computador, perde tempo, erra fórmula e desiste — fica chutando de novo no próximo lote",
+      t: "Termina o serviço e descobre que o lucro sumiu porque não calculou direito o material",
     },
   ];
   return (
@@ -475,7 +470,7 @@ function Pains() {
         >
           ALGUMA DESSAS SITUAÇÕES
           <br />
-          <span style={{ color: C.green }}>TE FEZ PERDER DINHEIRO?</span>
+          <span style={{ color: C.yellowDeep }}>TE CUSTOU DINHEIRO?</span>
         </h2>
         <div style={{ width: 60, height: 4, background: C.yellow, margin: "18px auto 36px", borderRadius: 2 }} />
         <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 14, textAlign: "left" }}>
@@ -498,7 +493,7 @@ function Pains() {
                   width: 44,
                   height: 44,
                   borderRadius: 12,
-                  background: C.beige,
+                  background: "#fff6da",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
@@ -534,20 +529,20 @@ function HowItWorks() {
     {
       n: "1",
       img: appNovo,
-      title: "LANCE O LOTE",
-      desc: "Cadastre seu lote ou safra em segundos — avicultura, gado de leite, horta, suíno, peixe ou qualquer cultura. Só escolher o tipo e a quantidade.",
+      title: "CADASTRE O ORÇAMENTO",
+      desc: "Preencha cliente, tipo de serviço (funilaria, pintura completa, pintura parcial, polimento...), área ou peças afetadas e sua margem de lucro direto no celular.",
     },
     {
       n: "2",
       img: appCustos,
-      title: "LANCE OS GASTOS",
-      desc: "Vai lançando cada gasto que aparece: ração, mão de obra, frete, energia, insumo. Tudo no celular, sem planilha, sem calculadora.",
+      title: "CÁLCULO AUTOMÁTICO",
+      desc: "O app calcula tinta, verniz, massa, mão de obra, total a cobrar e seu lucro líquido na hora.",
     },
     {
       n: "3",
       img: appResultado,
-      title: "VEJA QUANTO SOBRA",
-      desc: "Na hora o app mostra o custo real por unidade, o preço mínimo pra não perder dinheiro e o preço com seu lucro pra negociar firme.",
+      title: "PDF PRONTO PRO WHATSAPP",
+      desc: "Gere o orçamento em PDF profissional e envie pelo WhatsApp em poucos cliques.",
     },
   ];
   return (
@@ -562,7 +557,7 @@ function HowItWorks() {
             color: C.white,
           }}
         >
-          O QUE É O <span style={{ color: C.yellow }}>CUSTORURAL PRO</span>
+          O QUE É O <span style={{ color: C.yellow }}>ORÇAFUNILARIA PRO</span>
         </h2>
         <div style={{ width: 60, height: 4, background: C.yellow, margin: "18px auto 48px", borderRadius: 2 }} />
 
@@ -609,9 +604,9 @@ function HowItWorks() {
                   height: 440,
                   padding: 10,
                   background: "#0a0a0a",
-                  border: "3px solid #1f2937",
+                  border: "3px solid #1f1f1f",
                   borderRadius: 32,
-                  boxShadow: "0 20px 40px -10px rgba(0,0,0,0.6)",
+                  boxShadow: "0 20px 40px -10px rgba(0,0,0,0.7)",
                   overflow: "hidden",
                   marginBottom: 22,
                 }}
@@ -655,9 +650,9 @@ function HowItWorks() {
             lineHeight: 1.55,
           }}
         >
-          E você ainda salva o histórico de cada lote, cadastra seus compradores e gera proposta de venda em PDF pra mandar pelo WhatsApp.
+          E você ainda salva o histórico de cada orçamento, cadastra seus clientes e gera proposta em PDF pra mandar pelo WhatsApp na hora.
         </p>
-        <CTAButton label="QUERO TESTAR AGORA" scrollTo="planos" style={{ marginTop: 30 }} />
+        <CTAButton label="QUERO MEU ACESSO AGORA" scrollTo="planos" style={{ marginTop: 30 }} />
       </div>
     </section>
   );
@@ -666,13 +661,12 @@ function HowItWorks() {
 /* ---------- INCLUDED ---------- */
 function Included() {
   const items = [
-    "Cálculo do custo real por unidade produzida (kg, dúzia, litro, cabeça, caixa...)",
-    "Preço mínimo pra não vender no prejuízo e preço com a sua margem de lucro",
-    "Funciona pra avicultura, gado de leite, suíno, horta, peixe e qualquer produção",
-    "Histórico de lotes salvos pra comparar safras e ver onde está perdendo dinheiro",
-    "Cadastro de compradores e clientes + proposta de venda em PDF pelo WhatsApp",
-    "Funciona offline no celular — usa direto no campo, sem sinal de internet",
-    "Acesso vitalício + todas as atualizações futuras, sem mensalidade",
+    "Cálculo automático de tinta, verniz, massa e material para 8 tipos de serviço",
+    "Margem de lucro ajustável de 30% a 100% com resultado em tempo real",
+    'PDF profissional + botão "Copiar pro WhatsApp" pra enviar na hora',
+    "Editor de preços do SEU fornecedor — esqueça tabela defasada",
+    "Funciona offline no celular, tablet ou computador — direto na oficina",
+    "Acesso vitalício + todas as atualizações futuras sem custo adicional",
   ];
   return (
     <section style={{ background: C.navyDeep, padding: "60px 20px 80px" }}>
@@ -740,10 +734,10 @@ function Included() {
 /* ---------- BONUSES ---------- */
 function Bonuses() {
   const items = [
-    { title: 'Curso "Produtor que Lucra"', img: bonus1Img, value: "R$ 37,00" },
-    { title: '"Diagnóstico da Produção em 1 Hora"', img: bonus2Img, value: "R$ 37,00" },
-    { title: 'Kit "Produtor Rural" para Fechar Venda no WhatsApp', img: bonus3Img, value: "R$ 37,00" },
-    { title: '"Quanto Cobrar?" Guia de Preço por Região', img: bonus4Img, value: "R$ 37,00" },
+    { title: 'Curso "Funileiro que Fecha"', img: bonus1Img, value: "R$ 37,00" },
+    { title: '"Diagnóstico de Veículo que Convence em 1 Hora"', img: bonus2Img, value: "R$ 37,00" },
+    { title: 'Kit "Funileiro Profissional" para Fechar Serviço no WhatsApp', img: bonus3Img, value: "R$ 37,00" },
+    { title: '"Quanto Cobrar?" Guia de Precificação por Região', img: bonus4Img, value: "R$ 37,00" },
   ];
 
   return (
@@ -786,7 +780,7 @@ function Bonuses() {
                 style={{
                   width: "100%",
                   aspectRatio: "1 / 1",
-                  background: "#fff",
+                  background: "#000",
                   borderRadius: 12,
                   overflow: "hidden",
                   marginBottom: 14,
@@ -814,7 +808,7 @@ function Bonuses() {
                 {it.title}
               </h3>
               <div style={{ color: "#ef4444", fontSize: 13, textDecoration: "line-through" }}>{it.value}</div>
-              <div style={{ ...heading, color: "#7bc47f", fontSize: 14, marginTop: 4 }}>HOJE GRÁTIS</div>
+              <div style={{ ...heading, color: C.yellow, fontSize: 14, marginTop: 4 }}>HOJE GRÁTIS</div>
             </div>
           ))}
         </div>
@@ -837,7 +831,7 @@ function Bonuses() {
           <div style={{ color: "rgba(255,255,255,0.7)", fontSize: 13, marginTop: 14, lineHeight: 1.4 }}>
             Tudo incluído no Plano Premium
           </div>
-          <div style={{ ...heading, color: "#7bc47f", fontSize: 13, marginTop: 12, letterSpacing: 1 }}>
+          <div style={{ ...heading, color: C.yellow, fontSize: 13, marginTop: 12, letterSpacing: 1 }}>
             ACESSO IMEDIATO
           </div>
         </div>
@@ -860,7 +854,7 @@ function Pricing() {
             margin: "20px 0 0",
           }}
         >
-          ESCOLHA SEU <span style={{ color: C.green }}>PLANO</span>
+          ESCOLHA SEU <span style={{ color: C.yellowDeep }}>PLANO</span>
         </h2>
         <div style={{ width: 60, height: 4, background: C.yellow, margin: "18px auto 48px", borderRadius: 2 }} />
 
@@ -898,12 +892,11 @@ function Pricing() {
             </div>
             <ul style={{ listStyle: "none", padding: 0, margin: "28px 0 0", display: "grid", gap: 12 }}>
               {[
-                { ok: true, t: "App CustoRural Pro" },
-                { ok: false, t: "Apenas 3 lotes salvos por mês" },
-                { ok: false, t: "Sem cadastro de compradores" },
-                { ok: false, t: "Sem proposta de venda em PDF" },
+                { ok: true, t: "App OrçaFunilaria Pro" },
+                { ok: false, t: "Apenas 3 orçamentos por mês" },
+                { ok: false, t: "PDF básico sem personalização" },
+                { ok: false, t: "Sem envio pelo WhatsApp" },
                 { ok: false, t: "Sem bônus exclusivos" },
-                { ok: false, t: "Sem atualizações futuras" },
               ].map((it, i) => (
                 <li key={i} style={{ display: "flex", gap: 10, alignItems: "center", fontSize: 14, color: C.ink }}>
                   <span
@@ -995,30 +988,29 @@ function Pricing() {
                 marginTop: 6,
               }}
             >
-              TUDO LIBERADO PRO PRODUTOR
+              TUDO LIBERADO PRO FUNILEIRO
             </div>
             <ul style={{ listStyle: "none", padding: 0, margin: "28px 0 0", display: "grid", gap: 11 }}>
               {[
-                "App CustoRural Pro completo",
-                "Cálculo do custo real e quanto sobra em cada lote",
-                "Histórico ilimitado de lotes e safras",
-                "Cadastro de compradores e proposta em PDF",
+                "APP OrçaFunilaria Pro completo",
+                "Cálculo automático de material, custo e lucro",
+                "Orçamento profissional em PDF",
+                "Envio direto pelo WhatsApp",
                 "Acesso vitalício + atualizações",
               ].map((t, i) => (
                 <li
                   key={i}
                   style={{ display: "flex", gap: 10, alignItems: "center", fontSize: 14, color: C.white }}
                 >
-                  <span style={{ color: "#7bc47f", fontWeight: 900 }}>✓</span>
+                  <span style={{ color: C.yellow, fontWeight: 900 }}>✓</span>
                   <span>{t}</span>
                 </li>
               ))}
               {[
-                "BÔNUS: Curso Produtor que Lucra",
-                "BÔNUS: Diagnóstico da Produção em 1 Hora",
-                "BÔNUS: Kit Produtor Rural",
-                "BÔNUS: Tabela de preços por região",
-                "BÔNUS: Scripts de WhatsApp pra vender",
+                "BÔNUS: Curso Funileiro que Fecha",
+                "BÔNUS: Diagnóstico de Veículo em 1 Hora",
+                "BÔNUS: Kit Funileiro Profissional",
+                "BÔNUS: Guia Quanto Cobrar por Região",
               ].map((t, i) => (
                 <li
                   key={i}
@@ -1039,7 +1031,7 @@ function Pricing() {
                 }}
               >
                 <span>⭐</span>
-                <span>Inclui todos os 5 bônus</span>
+                <span>Inclui todos os 4 bônus</span>
               </li>
             </ul>
             <div style={{ flex: 1 }} />
@@ -1067,40 +1059,34 @@ function Pricing() {
 function Testimonials() {
   const testimonials = [
     {
-      name: "José Roberto",
-      city: "Toledo - PR",
-      role: "Avicultura",
-      text: "Eu vendia frango sem saber se tava no lucro. No primeiro lote que lancei no app vi que tava perdendo R$ 0,40 por kg. Mudei o preço com o comprador e agora sei o que sobra.",
+      name: "Cláudio Mendes",
+      city: "Guarulhos - SP",
+      role: "Funilaria e pintura",
+      text: "Antes eu levava meio dia pra fechar um orçamento e ainda perdia o cliente. Agora mando o PDF em 3 minutos pelo Whats e o cara aprova na hora. Fechei 4 serviços a mais só essa semana.",
     },
     {
-      name: "Antônio Carlos",
-      city: "Patos de Minas - MG",
-      role: "Gado de leite",
-      text: "Achei que era complicado, mas é só ir lançando os gastos. O app me mostrou que o litro tava saindo mais caro do que eu vendia. Reajustei e parei de trabalhar de graça.",
+      name: "Rogério Alves",
+      city: "Contagem - MG",
+      role: "Pintura automotiva",
+      text: "Eu orçava no chute e vivia comprando tinta a mais na loja pagando o dobro. O app calcula tinta, verniz e massa certinho. Parei de perder dinheiro com material.",
     },
     {
-      name: "Pedro Henrique",
-      city: "Cascavel - PR",
-      role: "Suinocultura",
-      text: "Trabalho com porco há 12 anos e sempre fiz conta no caderno. Esse app mostra na hora quanto sobra. Não negocio mais no chute, sei o quanto posso baixar.",
+      name: "Fábio Souza",
+      city: "Curitiba - PR",
+      role: "Reparo de amassados",
+      text: "O que me pegava era demorar pra responder. Cliente não espera. Com o PDF profissional pronto na hora, hoje eu respondo antes de todo mundo e fecho mais.",
     },
     {
-      name: "Sebastião",
-      city: "Petrolina - PE",
-      role: "Horticultura",
-      text: "Plantio alface, couve, cheiro verde. Agora cada caixa que mando pra feira eu sei o custo e o preço mínimo. Já parei de vender barato pra atravessador.",
+      name: "Anderson Lima",
+      city: "Duque de Caxias - RJ",
+      role: "Funilaria completa",
+      text: "Cansei de terminar serviço e ver que o lucro tinha sumido. O app mostra o lucro líquido antes de eu passar o preço. Agora sei exatamente quanto vou ganhar.",
     },
     {
-      name: "Geraldo",
-      city: "Goiânia - GO",
-      role: "Piscicultura",
-      text: "Vendia tilápia no preço que o comprador colocava. Calculei tudo no app e descobri que tava no prejuízo há meses. Agora chego firme na negociação.",
-    },
-    {
-      name: "Vitor Hugo",
-      city: "Chapecó - SC",
-      role: "Agricultura familiar",
-      text: "Funciona offline, uso direto no sítio sem sinal. Lanço o gasto na hora que compro o insumo. No fim do lote tá tudo somado. Coisa boa demais.",
+      name: "Wagner Costa",
+      city: "Feira de Santana - BA",
+      role: "Pintura e polimento",
+      text: "O cliente olha o PDF e já sente que é coisa séria. Aumentei meu preço médio porque a proposta ficou profissional. Melhor investimento de R$20 que fiz.",
     },
   ];
   const loop = [...testimonials, ...testimonials];
@@ -1113,16 +1099,16 @@ function Testimonials() {
             ...heading,
             fontSize: "clamp(28px, 6vw, 44px)",
             margin: "20px 0 0",
-            color: C.ink,
+            color: C.white,
             lineHeight: 1.1,
           }}
         >
-          O QUE OS PRODUTORES
+          O QUE OS FUNILEIROS
           <br />
-          <span style={{ color: C.green }}>ESTÃO DIZENDO</span>
+          <span style={{ color: C.yellow }}>ESTÃO DIZENDO</span>
         </h2>
-        <p style={{ ...heading, color: C.green, fontSize: 13, letterSpacing: 1.5, marginTop: 18 }}>
-          QUEM PAROU DE VENDER NO ESCURO
+        <p style={{ ...heading, color: C.yellow, fontSize: 13, letterSpacing: 1.5, marginTop: 18 }}>
+          RESULTADOS DE QUEM PAROU DE ORÇAR NO CHUTE
         </p>
       </div>
 
@@ -1152,10 +1138,10 @@ function Testimonials() {
                 flex: "0 0 auto",
                 width: 320,
                 borderRadius: 18,
-                background: C.white,
-                border: `1px solid ${C.cardBorder}`,
+                background: "#212121",
+                border: "1px solid #333",
                 padding: 22,
-                boxShadow: "0 20px 40px -15px rgba(0,0,0,0.18)",
+                boxShadow: "0 20px 40px -15px rgba(0,0,0,0.5)",
                 textAlign: "left",
                 display: "flex",
                 flexDirection: "column",
@@ -1173,16 +1159,16 @@ function Testimonials() {
                     borderRadius: "50%",
                     objectFit: "cover",
                     flexShrink: 0,
-                    border: `2px solid ${C.green}`,
+                    border: `2px solid ${C.yellow}`,
                   }}
                 />
                 <div>
-                  <div style={{ ...heading, fontSize: 14, color: C.ink, textTransform: "none" }}>{t.name}</div>
-                  <div style={{ fontSize: 11, color: C.inkMuted }}>{t.city} · {t.role}</div>
+                  <div style={{ ...heading, fontSize: 14, color: C.white, textTransform: "none" }}>{t.name}</div>
+                  <div style={{ fontSize: 11, color: "#aaa" }}>{t.city} · {t.role}</div>
                 </div>
               </div>
               <div style={{ color: "#f5c518", fontSize: 14, letterSpacing: 2 }}>★★★★★</div>
-              <p style={{ margin: 0, color: C.inkSoft, fontSize: 14, lineHeight: 1.55 }}>
+              <p style={{ margin: 0, color: "rgba(255,255,255,0.82)", fontSize: 14, lineHeight: 1.55 }}>
                 "{t.text}"
               </p>
             </div>
@@ -1234,13 +1220,13 @@ function Guarantee() {
               lineHeight: 1.15,
             }}
           >
-            CONFIAMOS <span style={{ color: C.green }}>TANTO</span> NO PRODUTO QUE DAMOS{" "}
-            <span style={{ color: C.green }}>30 DIAS</span> DE GARANTIA INCONDICIONAL
+            CONFIAMOS <span style={{ color: C.yellowDeep }}>TANTO</span> NO PRODUTO QUE DAMOS{" "}
+            <span style={{ color: C.yellowDeep }}>30 DIAS</span> DE GARANTIA INCONDICIONAL
           </h2>
           <div style={{ width: 60, height: 4, background: C.yellow, margin: "18px 0", borderRadius: 2 }} />
           <p style={{ color: C.inkSoft, fontSize: 15, lineHeight: 1.6, margin: 0 }}>
-            Teste o <strong style={{ color: C.ink }}>CustoRural Pro</strong> sem pressa.
-            Se em 30 dias você achar que não serve pra sua produção — sem burocracia, sem perguntar nada,
+            Teste o <strong style={{ color: C.ink }}>OrçaFunilaria Pro</strong> sem pressa.
+            Se em 30 dias você achar que não serve pra sua oficina — sem burocracia, sem perguntar nada,
             devolvemos cada centavo. Você não corre risco nenhum.
           </p>
         </div>
@@ -1265,7 +1251,7 @@ function Author() {
               lineHeight: 1.1,
             }}
           >
-            QUEM CRIOU O <span style={{ color: C.green }}>CUSTORURAL PRO?</span>
+            QUEM CRIOU O <span style={{ color: C.yellowDeep }}>ORÇAFUNILARIA PRO?</span>
           </h2>
         </div>
 
@@ -1294,7 +1280,7 @@ function Author() {
           >
             <img
               src={criadorImg}
-              alt="José Roberto - Produtor rural há +20 anos"
+              alt="Marcelo Ribeiro - Funileiro autônomo há +14 anos"
               style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
             />
             <div
@@ -1306,41 +1292,41 @@ function Author() {
                 color: C.white,
               }}
             >
-              <div style={{ ...heading, fontSize: 18 }}>José Roberto</div>
+              <div style={{ ...heading, fontSize: 18 }}>Marcelo Ribeiro</div>
               <div style={{ ...heading, color: C.yellow, fontSize: 11, letterSpacing: 1.5, marginTop: 4 }}>
-                PRODUTOR RURAL HÁ +20 ANOS
+                FUNILEIRO AUTÔNOMO HÁ +14 ANOS
               </div>
             </div>
           </div>
 
           <div>
-            <div style={{ ...heading, color: C.green, fontSize: 12, letterSpacing: 2 }}>A HISTÓRIA</div>
+            <div style={{ ...heading, color: C.yellowDeep, fontSize: 12, letterSpacing: 2 }}>A HISTÓRIA</div>
             <h3 style={{ ...heading, fontSize: 32, color: C.ink, margin: "10px 0 4px" }}>ME CHAMO</h3>
-            <h3 style={{ ...heading, fontSize: 32, color: C.ink, margin: 0 }}>JOSÉ ROBERTO</h3>
-            <div style={{ ...heading, color: C.green, fontSize: 13, marginTop: 12, letterSpacing: 0.5 }}>
-              Produtor rural há +20 anos
+            <h3 style={{ ...heading, fontSize: 32, color: C.ink, margin: 0 }}>MARCELO RIBEIRO</h3>
+            <div style={{ ...heading, color: C.yellowDeep, fontSize: 13, marginTop: 12, letterSpacing: 0.5 }}>
+              Funileiro autônomo há +14 anos
             </div>
 
             <p style={{ color: C.inkSoft, fontSize: 15, lineHeight: 1.7, marginTop: 20 }}>
-              Trabalhei a vida toda no sítio. Comecei com avicultura, depois mexi com gado de leite e horta.
-              E sempre tive o mesmo problema: nunca sabia se tava lucrando de verdade. Fazia conta de cabeça,
-              anotava num caderninho, e no fim do ano o dinheiro tinha sumido.
+              Trabalho com funilaria e pintura desde os 20 anos. Sempre gostei do serviço, mas odiava a parte de
+              orçar. Ficava com papel e calculadora tentando somar tinta, verniz, massa e mão de obra — e volta e
+              meia errava a conta e fechava serviço no prejuízo.
             </p>
             <p style={{ color: C.inkSoft, fontSize: 15, lineHeight: 1.7, marginTop: 14 }}>
-              Já vendi lote de frango por preço que mal pagou a ração. Já entreguei leite por valor que não cobria
-              a luz e a mão de obra. E o pior: só descobria isso meses depois, quando já era tarde.
+              O pior era a demora. Enquanto eu calculava tudo no papel, o cliente já tinha mandado mensagem pra outro
+              funileiro que respondia mais rápido. Perdi muito serviço bom só por não ter uma proposta pronta na hora.
             </p>
             <p style={{ color: C.inkSoft, fontSize: 15, lineHeight: 1.7, marginTop: 14 }}>
-              Foi por isso que criei o <strong style={{ color: C.ink }}>CustoRural Pro</strong> — um app simples
-              que qualquer produtor usa no celular, mesmo sem internet no campo. Lança o gasto, vê o custo real
-              e sabe na hora até onde pode negociar sem perder dinheiro.
+              Foi por isso que criei o <strong style={{ color: C.ink }}>OrçaFunilaria Pro</strong> — um app simples
+              que calcula todo o material e a mão de obra em segundos e gera um PDF profissional pra mandar no
+              WhatsApp na hora. Hoje eu fecho mais serviço respondendo mais rápido que a concorrência.
             </p>
 
             <div
               style={{
                 marginTop: 24,
-                background: C.beige,
-                borderLeft: `4px solid ${C.green}`,
+                background: "#fff6da",
+                borderLeft: `4px solid ${C.yellowDeep}`,
                 padding: "16px 20px",
                 borderRadius: 8,
                 color: C.ink,
@@ -1349,7 +1335,7 @@ function Author() {
                 lineHeight: 1.5,
               }}
             >
-              "Se eu tivesse esse app quando comecei, teria evitado anos vendendo no prejuízo sem saber."
+              "Se eu tivesse esse app quando comecei, teria fechado o dobro de serviço e nunca mais orçado no chute."
             </div>
           </div>
         </div>
@@ -1362,16 +1348,16 @@ function Author() {
 function FAQ() {
   const items = [
     {
-      q: "Funciona pra qualquer tipo de produção?",
-      a: "Sim. Funciona pra avicultura, suinocultura, gado de leite, gado de corte, horta, piscicultura, agricultura em geral — qualquer produção em que você tem gasto e vende um produto. Você escolhe a unidade (kg, litro, dúzia, cabeça, caixa) e o app calcula.",
+      q: "Funciona pra qualquer tipo de serviço de funilaria?",
+      a: "Sim. Funciona pra funilaria (reparo de amassado), pintura completa, pintura parcial/retoque, troca de para-choque, polimento, reparo de para-lama, solda estrutural e martelinho de ouro. São 8 tipos de serviço com cálculo de material pronto.",
     },
     {
-      q: "Funciona sem internet no campo?",
-      a: "Sim. O app é PWA e funciona 100% offline. Você lança os gastos direto no sítio, sem sinal de celular. Quando voltar pra área com internet, ele sincroniza sozinho.",
+      q: "Funciona sem internet na oficina?",
+      a: "Sim. O app é PWA e funciona 100% offline. Você monta o orçamento direto na oficina, sem depender de sinal. Quando voltar pra área com internet, ele sincroniza sozinho.",
     },
     {
-      q: "Preciso entender de planilha ou contabilidade?",
-      a: "Não. Foi feito pra produtor que não gosta de planilha. Você só vai lançando os gastos (ração, mão de obra, frete, energia, insumo) e o app faz toda a conta sozinho.",
+      q: "Preciso entender de planilha ou cálculo?",
+      a: "Não. Foi feito pra funileiro que não gosta de planilha. Você só escolhe o serviço, informa as peças ou a área e a margem — o app calcula tinta, verniz, massa, mão de obra e o total sozinho.",
     },
     {
       q: "Como vou receber o app depois que comprar?",
@@ -1379,7 +1365,11 @@ function FAQ() {
     },
     {
       q: "Funciona no meu celular?",
-      a: "Sim. Funciona em qualquer Android ou iPhone, mesmo aparelho mais antigo. Abre no navegador do celular, igual um site.",
+      a: "Sim. Funciona em qualquer Android ou iPhone, tablet ou computador, mesmo aparelho mais antigo. Abre no navegador, igual um site.",
+    },
+    {
+      q: "Consigo usar a tabela de preços do meu fornecedor?",
+      a: "Sim. Tem um editor de preços onde você coloca os valores do SEU fornecedor de tinta e material. Assim o orçamento sai sempre com o preço real da sua região, sem tabela defasada.",
     },
     {
       q: "E se eu não gostar?",
@@ -1387,7 +1377,7 @@ function FAQ() {
     },
     {
       q: "Qual a diferença entre os planos?",
-      a: "O Básico só deixa salvar 3 lotes por mês e não tem cadastro de comprador nem PDF. O Premium libera tudo: lotes ilimitados, histórico, compradores, proposta em PDF, atualizações vitalícias e os 5 bônus.",
+      a: "O Básico só deixa fazer 3 orçamentos por mês, com PDF básico e sem envio pelo WhatsApp nem bônus. O Premium libera tudo: orçamentos ilimitados, PDF profissional, envio pelo WhatsApp, atualizações vitalícias e os 4 bônus.",
     },
   ];
   const [open, setOpen] = useState<number | null>(0);
@@ -1398,12 +1388,12 @@ function FAQ() {
           style={{
             ...heading,
             fontSize: "clamp(26px, 5vw, 36px)",
-            color: C.ink,
+            color: C.white,
             margin: "0 0 28px",
             textAlign: "center",
           }}
         >
-          AINDA COM <span style={{ color: C.green }}>DÚVIDA?</span>
+          AINDA COM <span style={{ color: C.yellow }}>DÚVIDA?</span>
         </h2>
         <div style={{ display: "grid", gap: 12 }}>
           {items.map((it, i) => {
@@ -1412,8 +1402,8 @@ function FAQ() {
               <div
                 key={i}
                 style={{
-                  background: C.white,
-                  border: `1px solid ${C.cardBorder}`,
+                  background: "#212121",
+                  border: "1px solid #333",
                   borderRadius: 12,
                   padding: 16,
                 }}
@@ -1424,7 +1414,7 @@ function FAQ() {
                     width: "100%",
                     background: "transparent",
                     border: "none",
-                    color: C.ink,
+                    color: C.white,
                     display: "flex",
                     justifyContent: "space-between",
                     alignItems: "center",
@@ -1437,12 +1427,12 @@ function FAQ() {
                   }}
                 >
                   <span>{it.q}</span>
-                  <span style={{ color: C.green, fontSize: 22, lineHeight: 1, marginLeft: 12 }}>
+                  <span style={{ color: C.yellow, fontSize: 22, lineHeight: 1, marginLeft: 12 }}>
                     {isOpen ? "−" : "+"}
                   </span>
                 </button>
                 {isOpen && (
-                  <p style={{ margin: "12px 0 0", color: C.inkSoft, fontSize: 14, lineHeight: 1.6 }}>{it.a}</p>
+                  <p style={{ margin: "12px 0 0", color: "rgba(255,255,255,0.75)", fontSize: 14, lineHeight: 1.6 }}>{it.a}</p>
                 )}
               </div>
             );
@@ -1464,7 +1454,7 @@ function FinalCTA() {
     >
       <div style={{ maxWidth: 760, margin: "0 auto", textAlign: "center" }}>
         <h2 style={{ ...heading, fontSize: "clamp(28px, 6vw, 40px)", color: C.white, margin: 0, lineHeight: 1.1 }}>
-          PARE DE VENDER NO ESCURO. <span style={{ color: C.yellow }}>DESCUBRA SEU LUCRO AGORA.</span>
+          SEU PRÓXIMO CLIENTE ESTÁ ESPERANDO UM <span style={{ color: C.yellow }}>ORÇAMENTO AGORA</span>
         </h2>
         <p style={{ color: "rgba(255,255,255,0.8)", fontSize: 15, lineHeight: 1.55, marginTop: 18 }}>
           {CONFIG.finalCta.body}
