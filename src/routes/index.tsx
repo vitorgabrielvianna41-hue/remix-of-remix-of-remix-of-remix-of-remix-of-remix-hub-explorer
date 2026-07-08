@@ -988,7 +988,7 @@ function Pricing() {
                 marginTop: 6,
               }}
             >
-              TUDO LIBERADO PRO FUNILEIRO
+              TUDO LIBERADO PRO SERRALHEIRO
             </div>
             <ul style={{ listStyle: "none", padding: 0, margin: "28px 0 0", display: "grid", gap: 11 }}>
               {[
