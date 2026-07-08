@@ -1061,31 +1061,31 @@ function Testimonials() {
     {
       name: "Cláudio Mendes",
       city: "Guarulhos - SP",
-      role: "Funilaria e pintura",
+      role: "Portões e grades",
       text: "Antes eu levava meio dia pra fechar um orçamento e ainda perdia o cliente. Agora mando o PDF em 3 minutos pelo Whats e o cara aprova na hora. Fechei 4 serviços a mais só essa semana.",
     },
     {
       name: "Rogério Alves",
       city: "Contagem - MG",
-      role: "Pintura automotiva",
-      text: "Eu orçava no chute e vivia comprando tinta a mais na loja pagando o dobro. O app calcula tinta, verniz e massa certinho. Parei de perder dinheiro com material.",
+      role: "Estruturas metálicas",
+      text: "Eu orçava no chute e vivia comprando ferro a mais no ferro velho pagando o dobro. O app calcula ferro, solda e material certinho. Parei de perder dinheiro com material.",
     },
     {
       name: "Fábio Souza",
       city: "Curitiba - PR",
-      role: "Reparo de amassados",
+      role: "Portões automáticos",
       text: "O que me pegava era demorar pra responder. Cliente não espera. Com o PDF profissional pronto na hora, hoje eu respondo antes de todo mundo e fecho mais.",
     },
     {
       name: "Anderson Lima",
       city: "Duque de Caxias - RJ",
-      role: "Funilaria completa",
+      role: "Serralheria geral",
       text: "Cansei de terminar serviço e ver que o lucro tinha sumido. O app mostra o lucro líquido antes de eu passar o preço. Agora sei exatamente quanto vou ganhar.",
     },
     {
       name: "Wagner Costa",
       city: "Feira de Santana - BA",
-      role: "Pintura e polimento",
+      role: "Grades e corrimãos",
       text: "O cliente olha o PDF e já sente que é coisa séria. Aumentei meu preço médio porque a proposta ficou profissional. Melhor investimento de R$20 que fiz.",
     },
   ];
