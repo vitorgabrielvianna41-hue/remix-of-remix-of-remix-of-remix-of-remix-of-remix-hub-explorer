@@ -234,7 +234,7 @@ function Hero() {
             color: C.white,
           }}
         >
-          ORÇAMENTO DE FUNILEIRO
+          ORÇAMENTO DE SERRALHEIRO
           <br />
           <span style={{ color: C.yellow }}>EM PDF EM 3 MINUTOS</span>
         </h1>
