@@ -234,7 +234,7 @@ function Hero() {
             color: C.white,
           }}
         >
-          ORÇAMENTO DE FUNILEIRO
+          ORÇAMENTO DE SERRALHEIRO
           <br />
           <span style={{ color: C.yellow }}>EM PDF EM 3 MINUTOS</span>
         </h1>
@@ -436,19 +436,19 @@ function Pains() {
   const items = [
     {
       icon: "🧮",
-      t: "Gasta uma hora calculando tinta, massa e material que o app faria em 2 minutos — e ainda erra a conta",
+      t: "Gasta uma hora calculando metro de ferro, solda e material que o app faria em 2 minutos — e ainda erra a conta",
     },
     {
       icon: "🛒",
-      t: "Orça no chute, começa o serviço e descobre que faltou material — compra na loja de tinta pagando 2x o preço",
+      t: "Orça no chute, começa o portão e descobre que faltou material — compra no ferro velho pagando 2x o preço",
     },
     {
       icon: "💬",
-      t: 'Responde "te mando o valor depois" e o cliente já fechou com outro funileiro que respondeu PDF em 5 minutos',
+      t: 'Responde "te mando o valor depois" e o cliente já fechou com outro serralheiro que respondeu PDF em 5 minutos',
     },
     {
       icon: "🏃",
-      t: "Perde serviço para funileiro menos experiente só porque ele responde mais rápido e com proposta profissional",
+      t: "Perde serviço para serralheiro menos experiente só porque ele responde mais rápido e com proposta profissional",
     },
     {
       icon: "📉",
@@ -530,13 +530,13 @@ function HowItWorks() {
       n: "1",
       img: appNovo,
       title: "CADASTRE O ORÇAMENTO",
-      desc: "Preencha cliente, tipo de serviço (funilaria, pintura completa, pintura parcial, polimento...), área ou peças afetadas e sua margem de lucro direto no celular.",
+      desc: "Preencha cliente, tipo de serviço, metragem de ferro e sua margem de lucro direto no celular.",
     },
     {
       n: "2",
       img: appCustos,
       title: "CÁLCULO AUTOMÁTICO",
-      desc: "O app calcula tinta, verniz, massa, mão de obra, total a cobrar e seu lucro líquido na hora.",
+      desc: "O app calcula materiais, mão de obra, total a cobrar e seu lucro líquido na hora.",
     },
     {
       n: "3",
@@ -557,7 +557,7 @@ function HowItWorks() {
             color: C.white,
           }}
         >
-          O QUE É O <span style={{ color: C.yellow }}>ORÇAFUNILARIA PRO</span>
+          O QUE É O <span style={{ color: C.yellow }}>ORÇASERRALHEIRO PRO</span>
         </h2>
         <div style={{ width: 60, height: 4, background: C.yellow, margin: "18px auto 48px", borderRadius: 2 }} />
 
@@ -661,7 +661,7 @@ function HowItWorks() {
 /* ---------- INCLUDED ---------- */
 function Included() {
   const items = [
-    "Cálculo automático de tinta, verniz, massa e material para 8 tipos de serviço",
+    "Cálculo automático de ferro, solda, tinta e material para 6 tipos de serviço",
     "Margem de lucro ajustável de 30% a 100% com resultado em tempo real",
     'PDF profissional + botão "Copiar pro WhatsApp" pra enviar na hora',
     "Editor de preços do SEU fornecedor — esqueça tabela defasada",
@@ -734,9 +734,9 @@ function Included() {
 /* ---------- BONUSES ---------- */
 function Bonuses() {
   const items = [
-    { title: 'Curso "Funileiro que Fecha"', img: bonus1Img, value: "R$ 37,00" },
-    { title: '"Diagnóstico de Veículo que Convence em 1 Hora"', img: bonus2Img, value: "R$ 37,00" },
-    { title: 'Kit "Funileiro Profissional" para Fechar Serviço no WhatsApp', img: bonus3Img, value: "R$ 37,00" },
+    { title: 'Curso "Serralheiro que Fecha"', img: bonus1Img, value: "R$ 37,00" },
+    { title: '"Medição que Convence em 1 Hora"', img: bonus2Img, value: "R$ 37,00" },
+    { title: 'Kit "Serralheiro Profissional" para Fechar Serviço no WhatsApp', img: bonus3Img, value: "R$ 37,00" },
     { title: '"Quanto Cobrar?" Guia de Precificação por Região', img: bonus4Img, value: "R$ 37,00" },
   ];
 
@@ -892,7 +892,7 @@ function Pricing() {
             </div>
             <ul style={{ listStyle: "none", padding: 0, margin: "28px 0 0", display: "grid", gap: 12 }}>
               {[
-                { ok: true, t: "App OrçaFunilaria Pro" },
+                { ok: true, t: "App OrçaSerralheiro Pro" },
                 { ok: false, t: "Apenas 3 orçamentos por mês" },
                 { ok: false, t: "PDF básico sem personalização" },
                 { ok: false, t: "Sem envio pelo WhatsApp" },
@@ -988,11 +988,11 @@ function Pricing() {
                 marginTop: 6,
               }}
             >
-              TUDO LIBERADO PRO FUNILEIRO
+              TUDO LIBERADO PRO SERRALHEIRO
             </div>
             <ul style={{ listStyle: "none", padding: 0, margin: "28px 0 0", display: "grid", gap: 11 }}>
               {[
-                "APP OrçaFunilaria Pro completo",
+                "APP OrçaSerralheiro Pro completo",
                 "Cálculo automático de material, custo e lucro",
                 "Orçamento profissional em PDF",
                 "Envio direto pelo WhatsApp",
@@ -1007,9 +1007,9 @@ function Pricing() {
                 </li>
               ))}
               {[
-                "BÔNUS: Curso Funileiro que Fecha",
-                "BÔNUS: Diagnóstico de Veículo em 1 Hora",
-                "BÔNUS: Kit Funileiro Profissional",
+                "BÔNUS: Curso Serralheiro que Fecha",
+                "BÔNUS: Medição que Convence em 1 Hora",
+                "BÔNUS: Kit Serralheiro Profissional",
                 "BÔNUS: Guia Quanto Cobrar por Região",
               ].map((t, i) => (
                 <li
@@ -1061,31 +1061,31 @@ function Testimonials() {
     {
       name: "Cláudio Mendes",
       city: "Guarulhos - SP",
-      role: "Funilaria e pintura",
+      role: "Portões e grades",
       text: "Antes eu levava meio dia pra fechar um orçamento e ainda perdia o cliente. Agora mando o PDF em 3 minutos pelo Whats e o cara aprova na hora. Fechei 4 serviços a mais só essa semana.",
     },
     {
       name: "Rogério Alves",
       city: "Contagem - MG",
-      role: "Pintura automotiva",
-      text: "Eu orçava no chute e vivia comprando tinta a mais na loja pagando o dobro. O app calcula tinta, verniz e massa certinho. Parei de perder dinheiro com material.",
+      role: "Estruturas metálicas",
+      text: "Eu orçava no chute e vivia comprando ferro a mais no ferro velho pagando o dobro. O app calcula ferro, solda e material certinho. Parei de perder dinheiro com material.",
     },
     {
       name: "Fábio Souza",
       city: "Curitiba - PR",
-      role: "Reparo de amassados",
+      role: "Portões automáticos",
       text: "O que me pegava era demorar pra responder. Cliente não espera. Com o PDF profissional pronto na hora, hoje eu respondo antes de todo mundo e fecho mais.",
     },
     {
       name: "Anderson Lima",
       city: "Duque de Caxias - RJ",
-      role: "Funilaria completa",
+      role: "Serralheria geral",
       text: "Cansei de terminar serviço e ver que o lucro tinha sumido. O app mostra o lucro líquido antes de eu passar o preço. Agora sei exatamente quanto vou ganhar.",
     },
     {
       name: "Wagner Costa",
       city: "Feira de Santana - BA",
-      role: "Pintura e polimento",
+      role: "Grades e corrimãos",
       text: "O cliente olha o PDF e já sente que é coisa séria. Aumentei meu preço médio porque a proposta ficou profissional. Melhor investimento de R$20 que fiz.",
     },
   ];
@@ -1103,7 +1103,7 @@ function Testimonials() {
             lineHeight: 1.1,
           }}
         >
-          O QUE OS FUNILEIROS
+          O QUE OS SERRALHEIROS
           <br />
           <span style={{ color: C.yellow }}>ESTÃO DIZENDO</span>
         </h2>
@@ -1225,7 +1225,7 @@ function Guarantee() {
           </h2>
           <div style={{ width: 60, height: 4, background: C.yellow, margin: "18px 0", borderRadius: 2 }} />
           <p style={{ color: C.inkSoft, fontSize: 15, lineHeight: 1.6, margin: 0 }}>
-            Teste o <strong style={{ color: C.ink }}>OrçaFunilaria Pro</strong> sem pressa.
+            Teste o <strong style={{ color: C.ink }}>OrçaSerralheiro Pro</strong> sem pressa.
             Se em 30 dias você achar que não serve pra sua oficina — sem burocracia, sem perguntar nada,
             devolvemos cada centavo. Você não corre risco nenhum.
           </p>
@@ -1251,7 +1251,7 @@ function Author() {
               lineHeight: 1.1,
             }}
           >
-            QUEM CRIOU O <span style={{ color: C.yellowDeep }}>ORÇAFUNILARIA PRO?</span>
+            QUEM CRIOU O <span style={{ color: C.yellowDeep }}>ORÇASERRALHEIRO PRO?</span>
           </h2>
         </div>
 
@@ -1280,7 +1280,7 @@ function Author() {
           >
             <img
               src={criadorImg}
-              alt="Marcelo Ribeiro - Funileiro autônomo há +14 anos"
+              alt="Marcelo Ribeiro - Serralheiro autônomo há +14 anos"
               style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
             />
             <div
@@ -1294,7 +1294,7 @@ function Author() {
             >
               <div style={{ ...heading, fontSize: 18 }}>Marcelo Ribeiro</div>
               <div style={{ ...heading, color: C.yellow, fontSize: 11, letterSpacing: 1.5, marginTop: 4 }}>
-                FUNILEIRO AUTÔNOMO HÁ +14 ANOS
+                SERRALHEIRO AUTÔNOMO HÁ +14 ANOS
               </div>
             </div>
           </div>
@@ -1304,20 +1304,20 @@ function Author() {
             <h3 style={{ ...heading, fontSize: 32, color: C.ink, margin: "10px 0 4px" }}>ME CHAMO</h3>
             <h3 style={{ ...heading, fontSize: 32, color: C.ink, margin: 0 }}>MARCELO RIBEIRO</h3>
             <div style={{ ...heading, color: C.yellowDeep, fontSize: 13, marginTop: 12, letterSpacing: 0.5 }}>
-              Funileiro autônomo há +14 anos
+              Serralheiro autônomo há +14 anos
             </div>
 
             <p style={{ color: C.inkSoft, fontSize: 15, lineHeight: 1.7, marginTop: 20 }}>
-              Trabalho com funilaria e pintura desde os 20 anos. Sempre gostei do serviço, mas odiava a parte de
-              orçar. Ficava com papel e calculadora tentando somar tinta, verniz, massa e mão de obra — e volta e
+              Trabalho com serralheria desde os 20 anos. Sempre gostei do serviço, mas odiava a parte de
+              orçar. Ficava com papel e calculadora tentando somar ferro, solda, tinta e mão de obra — e volta e
               meia errava a conta e fechava serviço no prejuízo.
             </p>
             <p style={{ color: C.inkSoft, fontSize: 15, lineHeight: 1.7, marginTop: 14 }}>
-              O pior era a demora. Enquanto eu calculava tudo no papel, o cliente já tinha mandado mensagem pra outro
-              funileiro que respondia mais rápido. Perdi muito serviço bom só por não ter uma proposta pronta na hora.
+              O pior era a demora. Enquanto eu calculava tudo no papel, o cliente com obra já tinha mandado mensagem pra outro
+              serralheiro que respondia mais rápido. Perdi muito serviço bom só por não ter uma proposta pronta na hora.
             </p>
             <p style={{ color: C.inkSoft, fontSize: 15, lineHeight: 1.7, marginTop: 14 }}>
-              Foi por isso que criei o <strong style={{ color: C.ink }}>OrçaFunilaria Pro</strong> — um app simples
+              Foi por isso que criei o <strong style={{ color: C.ink }}>OrçaSerralheiro Pro</strong> — um app simples
               que calcula todo o material e a mão de obra em segundos e gera um PDF profissional pra mandar no
               WhatsApp na hora. Hoje eu fecho mais serviço respondendo mais rápido que a concorrência.
             </p>
@@ -1348,16 +1348,16 @@ function Author() {
 function FAQ() {
   const items = [
     {
-      q: "Funciona pra qualquer tipo de serviço de funilaria?",
-      a: "Sim. Funciona pra funilaria (reparo de amassado), pintura completa, pintura parcial/retoque, troca de para-choque, polimento, reparo de para-lama, solda estrutural e martelinho de ouro. São 8 tipos de serviço com cálculo de material pronto.",
+      q: "Funciona pra qualquer tipo de serviço de serralheria?",
+      a: "Sim. Funciona pra portão, grade, corrimão, estrutura metálica, cobertura e serralheria em geral. São 6 tipos de serviço com cálculo de material pronto.",
     },
     {
-      q: "Funciona sem internet na oficina?",
-      a: "Sim. O app é PWA e funciona 100% offline. Você monta o orçamento direto na oficina, sem depender de sinal. Quando voltar pra área com internet, ele sincroniza sozinho.",
+      q: "Precisa de internet na oficina?",
+      a: "Não. O app é PWA e funciona 100% offline. Você monta o orçamento direto na oficina, sem depender de sinal. Quando voltar pra área com internet, ele sincroniza sozinho.",
     },
     {
       q: "Preciso entender de planilha ou cálculo?",
-      a: "Não. Foi feito pra funileiro que não gosta de planilha. Você só escolhe o serviço, informa as peças ou a área e a margem — o app calcula tinta, verniz, massa, mão de obra e o total sozinho.",
+      a: "Não. Foi feito pra serralheiro que não gosta de planilha. Você só escolhe o serviço, informa a metragem de ferro e a margem — o app calcula ferro, solda, tinta, mão de obra e o total sozinho.",
     },
     {
       q: "Como vou receber o app depois que comprar?",
@@ -1369,7 +1369,7 @@ function FAQ() {
     },
     {
       q: "Consigo usar a tabela de preços do meu fornecedor?",
-      a: "Sim. Tem um editor de preços onde você coloca os valores do SEU fornecedor de tinta e material. Assim o orçamento sai sempre com o preço real da sua região, sem tabela defasada.",
+      a: "Sim. Tem um editor de preços onde você coloca os valores do SEU fornecedor de ferro e material. Assim o orçamento sai sempre com o preço real da sua região, sem tabela defasada.",
     },
     {
       q: "E se eu não gostar?",

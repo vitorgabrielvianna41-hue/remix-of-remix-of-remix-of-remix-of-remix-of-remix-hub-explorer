@@ -1,12 +1,12 @@
 /**
- * Landing Page Configuration — OrçaFunilaria Pro (funileiros autônomos)
+ * Landing Page Configuration — OrçaSerralheiro Pro (serralheiros autônomos)
  */
 
 export const CONFIG = {
   brand: {
-    name: "OrçaFunilaria Pro",
-    shortName: "OrçaFunilaria",
-    tagline: "FEITO PARA FUNILEIROS",
+    name: "OrçaSerralheiro Pro",
+    shortName: "OrçaSerralheiro",
+    tagline: "FEITO PARA SERRALHEIROS",
     socialProofCount: "+1.000",
   },
 
@@ -30,16 +30,16 @@ export const CONFIG = {
   },
 
   hero: {
-    badge: "🔧 FEITO PARA FUNILEIROS",
+    badge: "🔧 FEITO PARA SERRALHEIROS",
     subheadline:
-      "Gere PDF profissional e personalizado com o OrçaFunilaria Pro em minutos e feche mais serviços.",
+      "Gere PDF profissional e personalizado com o OrçaSerralheiro Pro em minutos e feche mais serviços.",
     socialProofCount: "+1.000",
-    socialProofLabel: "FUNILEIROS JÁ USAM",
+    socialProofLabel: "SERRALHEIROS JÁ USAM",
     ctaScrollLabel: "QUERO MEU ACESSO AGORA  →",
   },
 
   finalCta: {
-    body: "Enquanto você lê isso, tem um funileiro que já mandou o PDF. Por menos de R$20 você nunca mais perde serviço por demora.",
+    body: "Enquanto você lê isso, tem um serralheiro que já mandou o PDF. Por menos de R$20 você nunca mais perde serviço por demora.",
     ctaLabel: "⚡ QUERO MEU ACESSO AGORA",
     footer: "✓ 30 dias de garantia   ✓ Acesso imediato   ✓ Sem mensalidade",
   },
