@@ -661,7 +661,7 @@ function HowItWorks() {
 /* ---------- INCLUDED ---------- */
 function Included() {
   const items = [
-    "Cálculo automático de tinta, verniz, massa e material para 8 tipos de serviço",
+    "Cálculo automático de ferro, solda, tinta e material para 6 tipos de serviço",
     "Margem de lucro ajustável de 30% a 100% com resultado em tempo real",
     'PDF profissional + botão "Copiar pro WhatsApp" pra enviar na hora',
     "Editor de preços do SEU fornecedor — esqueça tabela defasada",
