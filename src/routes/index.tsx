@@ -1225,7 +1225,7 @@ function Guarantee() {
           </h2>
           <div style={{ width: 60, height: 4, background: C.yellow, margin: "18px 0", borderRadius: 2 }} />
           <p style={{ color: C.inkSoft, fontSize: 15, lineHeight: 1.6, margin: 0 }}>
-            Teste o <strong style={{ color: C.ink }}>OrçaFunilaria Pro</strong> sem pressa.
+            Teste o <strong style={{ color: C.ink }}>OrçaSerralheiro Pro</strong> sem pressa.
             Se em 30 dias você achar que não serve pra sua oficina — sem burocracia, sem perguntar nada,
             devolvemos cada centavo. Você não corre risco nenhum.
           </p>
