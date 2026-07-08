@@ -1251,7 +1251,7 @@ function Author() {
               lineHeight: 1.1,
             }}
           >
-            QUEM CRIOU O <span style={{ color: C.yellowDeep }}>ORÇAFUNILARIA PRO?</span>
+            QUEM CRIOU O <span style={{ color: C.yellowDeep }}>ORÇASERRALHEIRO PRO?</span>
           </h2>
         </div>
 
