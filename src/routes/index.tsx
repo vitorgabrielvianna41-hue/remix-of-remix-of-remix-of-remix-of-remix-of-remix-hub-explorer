@@ -1007,9 +1007,9 @@ function Pricing() {
                 </li>
               ))}
               {[
-                "BÔNUS: Curso Funileiro que Fecha",
-                "BÔNUS: Diagnóstico de Veículo em 1 Hora",
-                "BÔNUS: Kit Funileiro Profissional",
+                "BÔNUS: Curso Serralheiro que Fecha",
+                "BÔNUS: Medição que Convence em 1 Hora",
+                "BÔNUS: Kit Serralheiro Profissional",
                 "BÔNUS: Guia Quanto Cobrar por Região",
               ].map((t, i) => (
                 <li
