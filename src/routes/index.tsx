@@ -557,7 +557,7 @@ function HowItWorks() {
             color: C.white,
           }}
         >
-          O QUE É O <span style={{ color: C.yellow }}>ORÇAFUNILARIA PRO</span>
+          O QUE É O <span style={{ color: C.yellow }}>ORÇASERRALHEIRO PRO</span>
         </h2>
         <div style={{ width: 60, height: 4, background: C.yellow, margin: "18px auto 48px", borderRadius: 2 }} />
 
