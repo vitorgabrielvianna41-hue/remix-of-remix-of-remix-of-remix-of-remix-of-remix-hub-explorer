@@ -992,7 +992,7 @@ function Pricing() {
             </div>
             <ul style={{ listStyle: "none", padding: 0, margin: "28px 0 0", display: "grid", gap: 11 }}>
               {[
-                "APP OrçaFunilaria Pro completo",
+                "APP OrçaSerralheiro Pro completo",
                 "Cálculo automático de material, custo e lucro",
                 "Orçamento profissional em PDF",
                 "Envio direto pelo WhatsApp",
