@@ -1103,7 +1103,7 @@ function Testimonials() {
             lineHeight: 1.1,
           }}
         >
-          O QUE OS FUNILEIROS
+          O QUE OS SERRALHEIROS
           <br />
           <span style={{ color: C.yellow }}>ESTÃO DIZENDO</span>
         </h2>
