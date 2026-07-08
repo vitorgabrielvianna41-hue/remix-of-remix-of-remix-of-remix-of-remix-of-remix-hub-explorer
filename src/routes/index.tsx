@@ -1304,20 +1304,20 @@ function Author() {
             <h3 style={{ ...heading, fontSize: 32, color: C.ink, margin: "10px 0 4px" }}>ME CHAMO</h3>
             <h3 style={{ ...heading, fontSize: 32, color: C.ink, margin: 0 }}>MARCELO RIBEIRO</h3>
             <div style={{ ...heading, color: C.yellowDeep, fontSize: 13, marginTop: 12, letterSpacing: 0.5 }}>
-              Funileiro autônomo há +14 anos
+              Serralheiro autônomo há +14 anos
             </div>
 
             <p style={{ color: C.inkSoft, fontSize: 15, lineHeight: 1.7, marginTop: 20 }}>
-              Trabalho com funilaria e pintura desde os 20 anos. Sempre gostei do serviço, mas odiava a parte de
-              orçar. Ficava com papel e calculadora tentando somar tinta, verniz, massa e mão de obra — e volta e
+              Trabalho com serralheria desde os 20 anos. Sempre gostei do serviço, mas odiava a parte de
+              orçar. Ficava com papel e calculadora tentando somar ferro, solda, tinta e mão de obra — e volta e
               meia errava a conta e fechava serviço no prejuízo.
             </p>
             <p style={{ color: C.inkSoft, fontSize: 15, lineHeight: 1.7, marginTop: 14 }}>
-              O pior era a demora. Enquanto eu calculava tudo no papel, o cliente já tinha mandado mensagem pra outro
-              funileiro que respondia mais rápido. Perdi muito serviço bom só por não ter uma proposta pronta na hora.
+              O pior era a demora. Enquanto eu calculava tudo no papel, o cliente com obra já tinha mandado mensagem pra outro
+              serralheiro que respondia mais rápido. Perdi muito serviço bom só por não ter uma proposta pronta na hora.
             </p>
             <p style={{ color: C.inkSoft, fontSize: 15, lineHeight: 1.7, marginTop: 14 }}>
-              Foi por isso que criei o <strong style={{ color: C.ink }}>OrçaFunilaria Pro</strong> — um app simples
+              Foi por isso que criei o <strong style={{ color: C.ink }}>OrçaSerralheiro Pro</strong> — um app simples
               que calcula todo o material e a mão de obra em segundos e gera um PDF profissional pra mandar no
               WhatsApp na hora. Hoje eu fecho mais serviço respondendo mais rápido que a concorrência.
             </p>
