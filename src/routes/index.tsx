@@ -1294,7 +1294,7 @@ function Author() {
             >
               <div style={{ ...heading, fontSize: 18 }}>Marcelo Ribeiro</div>
               <div style={{ ...heading, color: C.yellow, fontSize: 11, letterSpacing: 1.5, marginTop: 4 }}>
-                FUNILEIRO AUTÔNOMO HÁ +14 ANOS
+                SERRALHEIRO AUTÔNOMO HÁ +14 ANOS
               </div>
             </div>
           </div>
