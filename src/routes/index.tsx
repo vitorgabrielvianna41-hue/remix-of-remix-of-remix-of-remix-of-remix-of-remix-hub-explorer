@@ -734,9 +734,9 @@ function Included() {
 /* ---------- BONUSES ---------- */
 function Bonuses() {
   const items = [
-    { title: 'Curso "Funileiro que Fecha"', img: bonus1Img, value: "R$ 37,00" },
-    { title: '"Diagnóstico de Veículo que Convence em 1 Hora"', img: bonus2Img, value: "R$ 37,00" },
-    { title: 'Kit "Funileiro Profissional" para Fechar Serviço no WhatsApp', img: bonus3Img, value: "R$ 37,00" },
+    { title: 'Curso "Serralheiro que Fecha"', img: bonus1Img, value: "R$ 37,00" },
+    { title: '"Medição que Convence em 1 Hora"', img: bonus2Img, value: "R$ 37,00" },
+    { title: 'Kit "Serralheiro Profissional" para Fechar Serviço no WhatsApp', img: bonus3Img, value: "R$ 37,00" },
     { title: '"Quanto Cobrar?" Guia de Precificação por Região', img: bonus4Img, value: "R$ 37,00" },
   ];
 
