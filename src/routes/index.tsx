@@ -530,13 +530,13 @@ function HowItWorks() {
       n: "1",
       img: appNovo,
       title: "CADASTRE O ORÇAMENTO",
-      desc: "Preencha cliente, tipo de serviço (funilaria, pintura completa, pintura parcial, polimento...), área ou peças afetadas e sua margem de lucro direto no celular.",
+      desc: "Preencha cliente, tipo de serviço, metragem de ferro e sua margem de lucro direto no celular.",
     },
     {
       n: "2",
       img: appCustos,
       title: "CÁLCULO AUTOMÁTICO",
-      desc: "O app calcula tinta, verniz, massa, mão de obra, total a cobrar e seu lucro líquido na hora.",
+      desc: "O app calcula materiais, mão de obra, total a cobrar e seu lucro líquido na hora.",
     },
     {
       n: "3",
