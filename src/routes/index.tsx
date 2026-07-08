@@ -1348,16 +1348,16 @@ function Author() {
 function FAQ() {
   const items = [
     {
-      q: "Funciona pra qualquer tipo de serviço de funilaria?",
-      a: "Sim. Funciona pra funilaria (reparo de amassado), pintura completa, pintura parcial/retoque, troca de para-choque, polimento, reparo de para-lama, solda estrutural e martelinho de ouro. São 8 tipos de serviço com cálculo de material pronto.",
+      q: "Funciona pra qualquer tipo de serviço de serralheria?",
+      a: "Sim. Funciona pra portão, grade, corrimão, estrutura metálica, cobertura e serralheria em geral. São 6 tipos de serviço com cálculo de material pronto.",
     },
     {
-      q: "Funciona sem internet na oficina?",
-      a: "Sim. O app é PWA e funciona 100% offline. Você monta o orçamento direto na oficina, sem depender de sinal. Quando voltar pra área com internet, ele sincroniza sozinho.",
+      q: "Precisa de internet na oficina?",
+      a: "Não. O app é PWA e funciona 100% offline. Você monta o orçamento direto na oficina, sem depender de sinal. Quando voltar pra área com internet, ele sincroniza sozinho.",
     },
     {
       q: "Preciso entender de planilha ou cálculo?",
-      a: "Não. Foi feito pra funileiro que não gosta de planilha. Você só escolhe o serviço, informa as peças ou a área e a margem — o app calcula tinta, verniz, massa, mão de obra e o total sozinho.",
+      a: "Não. Foi feito pra serralheiro que não gosta de planilha. Você só escolhe o serviço, informa a metragem de ferro e a margem — o app calcula ferro, solda, tinta, mão de obra e o total sozinho.",
     },
     {
       q: "Como vou receber o app depois que comprar?",
@@ -1369,7 +1369,7 @@ function FAQ() {
     },
     {
       q: "Consigo usar a tabela de preços do meu fornecedor?",
-      a: "Sim. Tem um editor de preços onde você coloca os valores do SEU fornecedor de tinta e material. Assim o orçamento sai sempre com o preço real da sua região, sem tabela defasada.",
+      a: "Sim. Tem um editor de preços onde você coloca os valores do SEU fornecedor de ferro e material. Assim o orçamento sai sempre com o preço real da sua região, sem tabela defasada.",
     },
     {
       q: "E se eu não gostar?",
