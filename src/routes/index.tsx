@@ -892,7 +892,7 @@ function Pricing() {
             </div>
             <ul style={{ listStyle: "none", padding: 0, margin: "28px 0 0", display: "grid", gap: 12 }}>
               {[
-                { ok: true, t: "App OrçaFunilaria Pro" },
+                { ok: true, t: "App OrçaSerralheiro Pro" },
                 { ok: false, t: "Apenas 3 orçamentos por mês" },
                 { ok: false, t: "PDF básico sem personalização" },
                 { ok: false, t: "Sem envio pelo WhatsApp" },
