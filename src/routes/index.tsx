@@ -1280,7 +1280,7 @@ function Author() {
           >
             <img
               src={criadorImg}
-              alt="Marcelo Ribeiro - Funileiro autônomo há +14 anos"
+              alt="Marcelo Ribeiro - Serralheiro autônomo há +14 anos"
               style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
             />
             <div
