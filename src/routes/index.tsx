@@ -436,19 +436,19 @@ function Pains() {
   const items = [
     {
       icon: "🧮",
-      t: "Gasta uma hora calculando tinta, massa e material que o app faria em 2 minutos — e ainda erra a conta",
+      t: "Gasta uma hora calculando metro de ferro, solda e material que o app faria em 2 minutos — e ainda erra a conta",
     },
     {
       icon: "🛒",
-      t: "Orça no chute, começa o serviço e descobre que faltou material — compra na loja de tinta pagando 2x o preço",
+      t: "Orça no chute, começa o portão e descobre que faltou material — compra no ferro velho pagando 2x o preço",
     },
     {
       icon: "💬",
-      t: 'Responde "te mando o valor depois" e o cliente já fechou com outro funileiro que respondeu PDF em 5 minutos',
+      t: 'Responde "te mando o valor depois" e o cliente já fechou com outro serralheiro que respondeu PDF em 5 minutos',
     },
     {
       icon: "🏃",
-      t: "Perde serviço para funileiro menos experiente só porque ele responde mais rápido e com proposta profissional",
+      t: "Perde serviço para serralheiro menos experiente só porque ele responde mais rápido e com proposta profissional",
     },
     {
       icon: "📉",
