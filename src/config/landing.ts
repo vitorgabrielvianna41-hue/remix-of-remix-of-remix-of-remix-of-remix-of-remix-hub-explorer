@@ -1,12 +1,12 @@
 /**
- * Landing Page Configuration — OrçaMarceneiro Pro (marceneiros autônomos)
+ * Landing Page Configuration — OrçaMarmoraria Pro (marmoristas autônomos)
  */
 
 export const CONFIG = {
   brand: {
-    name: "OrçaMarceneiro Pro",
-    shortName: "OrçaMarceneiro",
-    tagline: "FEITO PARA MARCENEIROS",
+    name: "OrçaMarmoraria Pro",
+    shortName: "OrçaMarmoraria",
+    tagline: "FEITO PARA MARMORISTAS",
     socialProofCount: "+1.000",
   },
 
@@ -17,7 +17,7 @@ export const CONFIG = {
 
   pricing: {
     basic: "R$ 10,00",
-    premium: "R$ 10,00",
+    premium: "R$ 24,90",
     premiumOriginal: "R$ 197,00",
     paymentType: "PAGAMENTO ÚNICO",
   },
@@ -30,16 +30,16 @@ export const CONFIG = {
   },
 
   hero: {
-    badge: "🪚 FEITO PARA MARCENEIROS",
+    badge: "🪨 FEITO PARA MARMORISTAS",
     subheadline:
-      "Gere PDF profissional e personalizado com o OrçaMarceneiro Pro em minutos e feche mais serviços.",
+      "Gere PDF profissional e personalizado com o OrçaMarmoraria Pro em minutos e feche mais serviços.",
     socialProofCount: "+1.000",
-    socialProofLabel: "MARCENEIROS JÁ USAM",
+    socialProofLabel: "MARMORISTAS JÁ USAM",
     ctaScrollLabel: "QUERO MEU ACESSO AGORA  →",
   },
 
   finalCta: {
-    body: "Enquanto você lê isso, tem um marceneiro que já mandou o PDF. Por menos de R$20 você nunca mais perde serviço por demora.",
+    body: "Enquanto você lê isso, tem um marmorista que já mandou o PDF. Por menos de R$25 você nunca mais perde serviço por demora.",
     ctaLabel: "⚡ QUERO MEU ACESSO AGORA",
     footer: "✓ 30 dias de garantia   ✓ Acesso imediato   ✓ Sem mensalidade",
   },
