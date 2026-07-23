@@ -1349,7 +1349,7 @@ function FAQ() {
   const items = [
     {
       q: "Funciona pra qualquer tipo de serviço de marmoraria?",
-      a: "Sim. Funciona pra móveis planejados, bancada embutido, cozinha planejada, armário embutido, painel de TV, mesa sob medida, restauração e porta de correr. São 8 tipos de serviço com cálculo de material pronto.",
+      a: "Sim. Funciona pra bancada de cozinha, bancada de banheiro, soleira e peitoril, piso em mármore/granito, revestimento de parede, escada em mármore, mesa sob medida e túmulo/lápide. São 8 tipos de serviço com cálculo de material pronto.",
     },
     {
       q: "Precisa de internet na marmoraria?",
